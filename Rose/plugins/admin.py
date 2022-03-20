@@ -439,5 +439,5 @@ Make it easy to promote and demote users with the admin module!
 
 Sometimes, you promote or demote an admin manually, and Rose doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally.
 This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the /admincache command;
-that'll force Rose to check who the admins are again. 
+that'll force Me to check who the admins are again. 
 """
