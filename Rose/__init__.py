@@ -16,7 +16,7 @@ from pyrogram import Client
 from config import *
 import pymongo
 
-SUPPORT_GROUP = "https://t.me/slbotzone" #If you Don't Know Codes Any error Fixing method please Don't change this.... ):
+SUPPORT_GROUP = "https://t.me/qiransupport" #If you Don't Know Codes Any error Fixing method please Don't change this.... ):
 
 
 SUDOERS = SUDO_USERS_ID
@@ -28,7 +28,7 @@ DB_URI = BASE_DB
 MONGO_URL = MONGO_URL
 
 # Don't change this
-OWNER_ID = "1467358214"
+OWNER_ID = "5069194822"
 
 myclient = pymongo.MongoClient(DB_URI)
 dbn = myclient["supun"]
