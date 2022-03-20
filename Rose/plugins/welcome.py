@@ -414,11 +414,12 @@ Give your members a warm welcome with the greetings module! Or a sad goodbye... 
 **Examples:**
 - Get the welcome message without any formatting
 > /welcome noformat
-"""
-__helpbtns__ = (
-        [[
-        InlineKeyboardButton('captcha', callback_data="_filling"),
-        InlineKeyboardButton('Formatting', callback_data='_mdownsl')
-        ]]
-)
 
+**Captcha
+Quran which will ask new Group Members to verify them by solving an emoji | number captcha.
+
+- /captcha - turn on captcha : There are two types of captcha
+- /remove - turn off captcha
+
+for more help ask in my support group
+"""
