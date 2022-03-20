@@ -92,7 +92,7 @@ async def chatbot(_, message):
     await message.reply_text(msg.text)
 
 @app.on_message(
-    filters.regex("Rosebot | @szrosebot | sz rose | rose")
+    filters.regex("quranbot | @quranrobot | quran")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -128,7 +128,7 @@ async def fetch(url):
 
 
 async def ai_lycia(url):
-    ai_name = "Rose.mp3"
+    ai_name = "Quran.mp3"
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as resp:
             if resp.status == 200:
@@ -138,25 +138,25 @@ async def ai_lycia(url):
     return ai_name
 
 
-@app.on_message(filters.command("rose"))
+@app.on_message(filters.command("quran"))
 async def Lycia(_, message):
     if len(message.command) < 2:
-        await message.reply_text("Rose Bot AI Voice Chatbot")
+        await message.reply_text("Quran Bot AI Voice Chatbot")
         return
     text = message.text.split(None, 1)[1]
     lycia = text.replace(" ", "%20")
-    m = await message.reply_text("Rose Bot Is Best...")
+    m = await message.reply_text("Quran Bot Is Best...")
     try:
         L = await fetch(
             f"https://api.affiliateplus.xyz/api/chatbot?message={lycia}&botname=Rose%20bot&ownername=supun%20maduranga&user=1"
         )
         chatbot = L["message"]
         VoiceAi = f"https://lyciavoice.herokuapp.com/lycia?text={chatbot}&lang=hi"
-        name = "Rosebot"
+        name = "QuranRobot"
     except Exception as e:
         await m.edit(str(e))
         return
-    await m.edit("Made By @szteambots...")
+    await m.edit("`Made By @akagawa...`")
     LyciaVoice = await ai_lycia(VoiceAi)
     await m.edit("Repyping...")
     await message.reply_audio(audio=LyciaVoice, title=chatbot, performer=name)
@@ -167,15 +167,15 @@ __MODULE__ = "Chat Bot"
 __HELP__ = """
 
 **Chatbot**
-AI based chatbot allows rose to talk and provides a more interactive group chat experience.
+AI based chatbot allows me to talk and provides a more interactive group chat experience.
 - /chatbot [ON/OFF]: Enables and disables AI Chat mode
 
 **Available chatbots**
 • Affiliate + API - Advanced, inteligent and cute chatbot which will keep you happy all time.. 
-• Luna chat bot
+• Quran chat bot
 
 **Assistant Service**
-- /rose [Message]: Get voice reply
+- /quran [Message]: Get voice reply
 """
 
 
