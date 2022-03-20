@@ -9,7 +9,6 @@ import re
 import uvloop
 from pyrogram import filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from Rose.menu import *
 from Rose import *
 from Rose.plugins import ALL_MODULES
 from Rose.utils import paginate_modules
@@ -59,7 +58,7 @@ async def start_bot():
  _____________________________________________   
 |                                             |  
 |         > Deployed Successfully <           |  
-|         (C) 2021-2022 by @szteambots        | 
+|        (C) 2021-2022 by @DionProjets        | 
 |          Greetings from supun  :)           |
 |_____________________________________________|  
                                                                                              
@@ -90,15 +89,11 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="❓ Commands Menu", callback_data="bot_commands"
-            ),
-        ],
-        [
-           InlineKeyboardButton(
-                text="👨‍💻 About", callback_data="_about"
+                text="❓ Help", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
-                text="🌎 Network", url="https://t.me/Theszrosebot"
+                text="👑 Owner",
+                url="https://t.me/akagawa",
             ),
         ],
         [
@@ -111,7 +106,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
 )
 
 home_text_pm = f"""
-Hello There ! I'm {BOT_NAME}✨ 
+Hello There ! I'm {BOT_NAME}
 
 An  advanced telegram Group management Bot For help 
 You Protect Your Groups & Suit For All Your Needs.
@@ -245,7 +240,7 @@ async def help_parser(name, keyboard=None):
 I'm a group management bot with some useful features.
 You can choose an option below, by clicking a button.
 If you have any bugs or questions on how to use me, 
-have a look at my [Docs](https://szsupunma.gitbook.io/rose-bot/), or head to @szteambots.
+Tell to @Royzu or @akagawa.
 
 **All commands can be used with the following: / **
 """.format(
@@ -283,7 +278,7 @@ async def help_button(client, query):
 I'm a group management bot with some useful features.
 You can choose an option below, by clicking a button.
 If you have any bugs or questions on how to use me, 
-have a look at my [Docs](https://szsupunma.gitbook.io/rose-bot/), or head to @szteambots.
+Tell to @Royzu or @akagawa.
 
 **All commands can be used with the following: / **
  """
