@@ -314,12 +314,3 @@ Filters are case insensitive; every time someone says your trigger words, Rose w
 ×  `trigger noformat`
 
 """
-__helpbtns__ = (
-        [[
-        InlineKeyboardButton('Markdown ', callback_data="_mdown"),
-        InlineKeyboardButton('Fillings', callback_data='_fillings')
-        ],
-        [
-        InlineKeyboardButton('Random Content', callback_data="_random")
-        ]]
-)
