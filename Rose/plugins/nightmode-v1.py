@@ -62,7 +62,7 @@ async def job_close():
         return
     for pro in chats:
         try:
-            await app.send_message(int(pro.chat_id), "🌗 12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By @szrosebot**"
+            await app.send_message(int(pro.chat_id), "🌗 12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By @quranrobot**"
             )
             await app.set_chat_permissions(
             chats,
@@ -82,12 +82,10 @@ async def job_close():
         except Exception as e:
                await app.send_message(
               int(pro.chat_id), f"""
-**Rose's Client Error...!**
+**Quran's Client Error...!**
 
-Forward this to @slbotzone
+Forward this to @akagawa
 `{e}`
-
-@szteambots | @supunma
 """
             )
 
@@ -103,7 +101,7 @@ async def job_open():
     for pro in chats:
         try:
             await app.send_message(
-              int(pro.chat_id), "🌗 06:00 Am, Group Is Opening.\n**Powered By @szrosebot**"
+              int(pro.chat_id), "🌗 06:00 Am, Group Is Opening.\n**Powered By @quranrobot**"
             )
             await app.set_chat_permissions(
                 chats,
@@ -123,10 +121,9 @@ async def job_open():
         except Exception as e:
             await app.send_message(
               int(pro.chat_id), f"""
-        **Rose's Client Error...!**
-Forward this to @slbotzone
+        **Quran's Client Error...!**
+Forward this to @akagawa
 `{e}`
-@szteambots | @supunma
 """
             )
 
