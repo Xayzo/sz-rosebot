@@ -115,28 +115,8 @@ __helpbtns__ = (
                 ),            
             InlineKeyboardButton
                 (
-                    "Anti-language", callback_data="_anl"
+                    "Anti-Spam", callback_data="_ans"
                 )
-        ],
-        [
-            InlineKeyboardButton
-                (
-                    "Anti-porn", callback_data="_anp"
-                ),  
-            InlineKeyboardButton
-                (
-                    "Anti-spam", callback_data="_ans"
-                )
-        ],
-        [       
-            InlineKeyboardButton           
-                (
-                    "Anti-spoiler", callback_data="_anss"
-                ),
-            InlineKeyboardButton
-                (
-                    "Anti-service", callback_data="_anssx"
-                )    
         ],
         [
             InlineKeyboardButton('Anti-Flood', callback_data='_fld')
